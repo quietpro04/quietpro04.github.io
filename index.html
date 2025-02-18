@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greg Joblove</title>
+</head>
+
+
+
+<body>
+
+    <nav class="navbar">
+        <a href="reels.html">reels</a>
+        <a href="contact.html">contact</a>
+        <a href="#">tools</a>
+      </nav>
+
+    <div class="welcome-screen">
+        <h1 class="centered-heading">GREG JOBLOVE</h1>
+        <h2 class="centered-subtitle"> vfx/graphics&#129668;</h2>
+
+        <div class="link-container">
+            <a href= "mailto:greg@joblove.com">email</a>
+            <a href="https://www.linkedin.com/in/joblove/" target="_blank" rel="noopener noreferrer">linkedin</a>
+            <a href="https://www.imdb.com/name/nm16396689/" target="_blank" rel="noopener noreferrer">imdb</a>
+            <a href="https://www.instagram.com/gregjoblove/" target="_blank" rel="noopener noreferrer">ig</a>
+            
+        </div>
+            <div class="video-container">
+                <video class="video" controls autoplay muted controlsList="nodownload" oncontextmenu="return false;">
+                    <source src="images/reels/Short Website Reel.mp4" type="video/mp4" />
+                </video>
+                
+                <div class="subtitle">2025 REEL</div>
+            </div>
+
+        </div>
+
+    <div>
+        <h2 class="section-header">projects ↓</h2>
+        <div class="filter-options">
+            <label>
+                <input type="checkbox" id="filter-vfx" checked> VFX
+            </label>
+            <label>
+                <input type="checkbox" id="filter-mograph" checked> MoGraph
+            </label>
+        </div>
+        <div class="projects-container" id="projectsList"></div>
+        <img id="hoverImage" class="preview-image">
+
+        <script src="projects.js"></script>
+
+    </div>
+
+    <div class="about-text">
+        <h2 class="section-header">about ↓</h2>
+            <p>I am a creative based in New York City. I’m a filmmaker, visual effects artist, and overall visual storyteller. With rich experience in cinematography, compositing, editing, motion graphics, 3D animation, and photography, I have discovered my love for using tools and technology to tell stories.</p>
+
+
+      
+
+    </div>
+
+    <div id="lightbox" class="lightbox" style="display: none;">
+        <div class="lightbox-content">
+          <span id="lightbox-close" class="lightbox-close">esc</span>
+          <h2 id="lightbox-title"></h2>
+          <p id="lightbox-client"></p>
+          <p id="lightbox-year"></p>
+          <img id="lightbox-image" src="" alt="Project Image" style="max-width:100%; display:none;">
+          <p id="lightbox-blurb"></p>
+        </div>
+      </div>
+
+</body>
+</html>
