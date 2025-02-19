@@ -11,6 +11,10 @@ body {
   background-size: 20px 20px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   position: fixed; /* Fixed position to stay on the right */
   right: 3%; /* Align to the right side */
@@ -34,7 +38,8 @@ body {
   text-decoration: underline;
 }
 
-/*reel*/
+/* Top Video */
+
 .video-container {
   display: flex;
   flex-direction: column;
@@ -52,7 +57,7 @@ body {
   border: 3px solid black;
 }
 
-.subtitle {
+.video-container .subtitle {
   position: absolute;
   bottom: -23px; /* Adjust distance from the bottom */
   left: 0px; /* Adjust distance from the left */
@@ -62,6 +67,8 @@ body {
   font-weight: bold;
 }
 
+/* For about */
+
 .about-text {
   font-size: 18px;
   margin: auto;
@@ -69,22 +76,34 @@ body {
   padding: 10px;
 }
 
-.video-container-horiz {
+/* For reel */
+
+#reels {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  gap: 10px; /* Adds spacing between the videos */
+  gap: 10px;
 }
 
-.video-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Aligns text to the left */
+.reel-wrapper p {
+  margin-top: 0px;
+  margin-bottom: 8px;
 }
+
 .video-horiz {
-  width: 50%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 45vw;
   border: 3px solid black;
 }
+
+@media (max-width: 620px) {
+  .video-horiz {
+    max-width: 90vw;
+  }
+}
+
+/* For projects */
 
 .projects-container {
   display: flex;
