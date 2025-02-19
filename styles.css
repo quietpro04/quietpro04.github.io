@@ -197,6 +197,13 @@ a:hover {
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
+  padding: 5px;
+}
+
+#lightbox-year,
+#lightbox-client {
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .lightbox-close:hover,
