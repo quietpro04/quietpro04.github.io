@@ -203,7 +203,7 @@ function openLightbox(project) {
 
   modalTitle.textContent = project.name;
   modalClient.style.display = project.client !== "-" ? "block" : "none";
-  modalClient.textContent = `${project.client}`;
+  modalClient.textContent = project.client ? `${project.client} •\xa0` : "";
   modalYear.textContent = `${new Date(project.year).getFullYear()}`;
   modalBlurb.textContent =
     project.blurb ||
