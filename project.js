@@ -162,16 +162,6 @@ function renderProjects(projects) {
   });
 }
 
-// while testing lightbox to auto open
-
-openLightbox({
-  name: "Babygirl",
-  link: "https://a24films.com/films/babygirl",
-  client: "A24",
-  year: "12/25/2024",
-  image_url: "BabyGirl_DIGI_Teaser_Fin7.jpg",
-});
-
 // Function to filter projects based on checkboxes
 function filterProjects() {
   const showVFX = filterVFX.checked;
