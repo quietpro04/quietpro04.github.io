@@ -219,6 +219,7 @@ a:hover {
   position: relative;
   border: 2px solid black;
   gap: 20px;
+  min-width: 550px;
 }
 
 .lightbox-text {
@@ -245,11 +246,13 @@ a:hover {
 }
 
 #lightbox-image {
-  /* margin-top: 100px; */
-  margin-left: auto;
-  margin-top: 50px;
+  /* margin: 50px 10px 50px auto; */
+  margin-top: 80px;
   margin-bottom: 50px;
-  margin: 50px 10px 50px auto;
+  margin-left: 20px;
+  min-width: 200px;
+  flex: 30%;
+  align-self: center;
 }
 
 /* Close button */
