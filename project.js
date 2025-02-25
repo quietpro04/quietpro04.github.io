@@ -162,6 +162,16 @@ function renderProjects(projects) {
   });
 }
 
+// while testing lightbox to auto open
+
+openLightbox({
+  name: "Babygirl",
+  link: "https://a24films.com/films/babygirl",
+  client: "A24",
+  year: "12/25/2024",
+  image_url: "BabyGirl_DIGI_Teaser_Fin7.jpg",
+});
+
 // Function to filter projects based on checkboxes
 function filterProjects() {
   const showVFX = filterVFX.checked;
@@ -203,9 +213,11 @@ function openLightbox(project) {
 
   modalTitle.textContent = project.name;
   modalClient.style.display = project.client !== "-" ? "block" : "none";
-  modalClient.textContent = `Client: ${project.client}`;
-  modalYear.textContent = `Year: ${new Date(project.year).getFullYear()}`;
-  modalBlurb.textContent = project.blurb || "";
+  modalClient.textContent = `${project.client}`;
+  modalYear.textContent = `${new Date(project.year).getFullYear()}`;
+  modalBlurb.textContent =
+    project.blurb ||
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut maximus nec diam nec hendrerit. Proin in pulvinar ipsum, quis ullamcorper erat. Nam erat est, viverra id ligula ac, porta laoreet ligula. Etiam posuere tortor metus, id viverra tellus tristique in. Morbi orci nisl, lobortis ut nulla a, tempor laoreet ligula. Sed maximus, dolor ac faucibus consectetur, sapien mi bibendum nunc, sit amet efficitur velit quam non leo. Nulla efficitur tempus neque, in ullamcorper nunc dignissim quis. Aenean enim diam, rutrum et commodo auctor, tincidunt eget turpis. Fusce efficitur, turpis ac elementum consectetur, odio libero sagittis augue, in fringilla massa odio sed eros.";
   closeButton.addEventListener("click", closeLightbox);
   // Close the lightbox if you click outside the modal content
   modal.addEventListener("click", (e) => {

@@ -97,7 +97,8 @@ html {
   border: 3px solid black;
 }
 
-@media (max-width: 620px) {
+/* to make bigger when they wrap */
+@media (max-width: 800px) {
   .video-horiz {
     max-width: 90vw;
   }
@@ -190,6 +191,8 @@ a:hover {
   color: #0066cc;
 }
 
+/* Lightbox */
+
 .lightbox {
   position: fixed;
   z-index: 1000;
@@ -204,13 +207,49 @@ a:hover {
   justify-content: center;
 }
 
-/* Lightbox content box */
+/* Lightbox style */
 .lightbox-content {
   background-color: #fff;
   padding: 20px;
-  max-width: 400px;
-  width: 90%;
+  max-width: 800px;
+  width: 80%;
+  max-height: 80vh;
+  display: flex;
+  align-items: center;
   position: relative;
+  border: 2px solid black;
+  gap: 20px;
+}
+
+.lightbox-text {
+  margin-bottom: auto;
+  margin-left: 20px;
+  min-width: 200px;
+  flex: 30%;
+}
+
+#lightbox-title {
+  font-size: 48px;
+  font-weight: normal;
+  font-family: Helvetica;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+#lightbox-small-info {
+  display: flex;
+}
+
+#lightbox-blurb {
+  text-align: left;
+}
+
+#lightbox-image {
+  /* margin-top: 100px; */
+  margin-left: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin: 50px 10px 50px auto;
 }
 
 /* Close button */
