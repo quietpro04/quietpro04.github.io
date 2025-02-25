@@ -311,7 +311,7 @@ a:hover {
 
 .lightbox-close:hover {
   font-weight: bold;
-  transform: translateX(2px);
+  transform: translateX(1px);
 }
 
 #lightbox-year,
