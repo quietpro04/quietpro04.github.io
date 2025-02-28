@@ -3,6 +3,7 @@ body {
   font-family: Helvetica;
   text-align: center;
   margin: 20px;
+  margin: 20px 140px;
   justify-content: center; /* Horizontally center */
   align-items: center;
 
@@ -128,6 +129,12 @@ html {
   gap: 10px;
 }
 
+.reel-wrapper {
+  flex: 1 1 30vw;
+  max-width: 80vw;
+  min-width: 400px;
+}
+
 .reel-wrapper p {
   margin-top: 0px;
   margin-bottom: 8px;
@@ -135,14 +142,18 @@ html {
 
 .video-horiz {
   width: 100%;
-  max-width: 45vw;
+  max-width: 40vw;
   border: 3px solid black;
 }
 
 /* to make bigger when they wrap */
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .video-horiz {
     max-width: 90vw;
+  }
+
+  .reel-wrapper {
+    margin-top: 20px;
   }
 }
 
