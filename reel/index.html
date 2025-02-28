@@ -44,5 +44,10 @@
     >
       <source src="../images/reels/Short Website Reel.mp4" type="video/mp4" />
     </video>
+    <script>
+      if (window.location.pathname.endsWith("/")) {
+        window.location.href = window.location.pathname.slice(0, -1);
+      }
+    </script>
   </body>
 </html>
