@@ -119,6 +119,16 @@ html {
   max-width: 50%; /* Ensures the paragraph doesn’t stretch too wide */
 }
 
+/* For contact */
+
+#email {
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 3.5em;
+  margin-bottom: 8px;
+  margin-top: 60px;
+}
+
 /* For reel */
 
 #reels {
