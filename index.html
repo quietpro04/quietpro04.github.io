@@ -10,7 +10,12 @@
 
   <body>
     <nav class="navbar">
-      <a href="#reels">reels</a>
+      <a href="javascript:void(0);" onclick="scrollToSection('reel-header')"
+        >reels
+      </a>
+      <a href="javascript:void(0);" onclick="scrollToSection('about-header')"
+        >about
+      </a>
       <a href="contact.html">contact</a>
       <a href="#">tools</a>
     </nav>
@@ -20,7 +25,7 @@
       <h2 class="centered-subtitle">vfx/graphics&#129668;</h2>
 
       <div class="link-container">
-        <a href="mailto:greg@joblove.com">email</a>
+        <a href="mailto: greg@joblove.com">email</a>
         <a
           href="https://www.linkedin.com/in/joblove/"
           target="_blank"
@@ -73,7 +78,7 @@
       <img id="hoverImage" class="preview-image" />
     </div>
 
-    <h2 class="section-header">reels ↓</h2>
+    <h2 class="section-header" id="reel-header">reels ↓</h2>
     <div id="reels">
       <div class="reel-wrapper">
         <p class="subtitle">VFX REEL</p>
@@ -108,7 +113,7 @@
     </div>
 
     <div class="about">
-      <h2 class="section-header">about ↓</h2>
+      <h2 class="section-header" id="about-header">about ↓</h2>
       <div class="about-content">
         <img src="images/greg.png" />
         <p>

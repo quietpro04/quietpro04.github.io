@@ -230,3 +230,9 @@ function openLightbox(project) {
 function closeLightbox() {
   document.getElementById("lightbox").style.display = "none";
 }
+
+// for scrolling
+function scrollToSection(id) {
+  var section = document.getElementById(id);
+  section.scrollIntoView({ behavior: "smooth" });
+}
