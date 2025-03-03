@@ -128,7 +128,7 @@ renderProjects(projectsData);
 // Function to render projects
 function renderProjects(projects) {
   projectsList.innerHTML = ""; // Clear existing content
-  projects.forEach(({ name, link, client, year, image_url }) => {
+  projects.forEach(({ name, link, client, year, image_url, blurb }) => {
     const projectElement = document.createElement("a");
     projectElement.href = link;
     projectElement.classList.add("project");
@@ -155,7 +155,7 @@ function renderProjects(projects) {
 
     projectElement.addEventListener("click", (e) => {
       e.preventDefault();
-      openLightbox({ name, link, client, year, image_url });
+      openLightbox({ name, link, client, year, image_url, blurb });
     });
 
     projectsList.appendChild(projectElement);
@@ -205,9 +205,7 @@ function openLightbox(project) {
   modalClient.style.display = project.client !== "-" ? "block" : "none";
   modalClient.textContent = project.client ? `${project.client} •\xa0` : "";
   modalYear.textContent = `${new Date(project.year).getFullYear()}`;
-  modalBlurb.textContent =
-    project.blurb ||
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut maximus nec diam nec hendrerit. Proin in pulvinar ipsum, quis ullamcorper erat. Nam erat est, viverra id ligula ac, porta laoreet ligula. Etiam posuere tortor metus, id viverra tellus tristique in. Morbi orci nisl, lobortis ut nulla a, tempor laoreet ligula. Sed maximus, dolor ac faucibus consectetur, sapien mi bibendum nunc, sit amet efficitur velit quam non leo. Nulla efficitur tempus neque, in ullamcorper nunc dignissim quis. Aenean enim diam, rutrum et commodo auctor, tincidunt eget turpis. Fusce efficitur, turpis ac elementum consectetur, odio libero sagittis augue, in fringilla massa odio sed eros.";
+  modalBlurb.textContent = project.blurb;
   closeButton.addEventListener("click", closeLightbox);
   // Close the lightbox if you click outside the modal content
   modal.addEventListener("click", (e) => {
