@@ -68,31 +68,6 @@ html {
   font-weight: bold;
 }
 
-/* For about */
-
-/* .about {
-  font-size: 18px;
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-} */
-
-/* .about p {
-  flex: 2;
-  text-align: left;
-}
-
-.about-content {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.about-content img {
-  height: 400px;
-  flex: 1;
-} */
-
 .about {
   max-width: 900px; /* Limits the width of the content */
   width: 80%; /* Ensures it doesn't take up too much space */
@@ -101,13 +76,13 @@ html {
 
 .about-content {
   display: flex;
-  align-items: flex-start; /* Aligns image and text at the top */
   align-items: center;
+  justify-content: center;
   gap: 20px; /* Adds a gap between the image and the text */
 }
 
 .about-content img {
-  max-width: 40%; /* Limits the image size */
+  max-width: 200px; /* Limits the image size */
   height: auto; /* Keeps the aspect ratio */
   object-fit: cover; /* Ensures the image fills the allocated space without distortion */
 }
@@ -117,6 +92,7 @@ html {
   font-size: 18px; /* Makes the text a bit larger for readability */
   line-height: 1.6; /* Improves line spacing for readability */
   max-width: 50%; /* Ensures the paragraph doesn’t stretch too wide */
+  min-width: 200px;
 }
 
 /* For contact */
