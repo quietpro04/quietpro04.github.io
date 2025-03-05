@@ -72,15 +72,6 @@ projectsData = [
     blurb: "Created in After Effects, this opening title sequence aimed at increasing the production quality of Jake William's Bankrupt series. It used the audio and soundtrack that accompianed the previous piece as a starting point, and has eight distinct segments.",
   },
   {
-    name: "Shitfly",
-    client: "Julian Park",
-    year: "3/4/2025",
-    image_url: "",
-    link: "",
-    category: "VFX",
-    blurb: "Animated, rendered and comped a CG fly into 11 shots.",
-  },
-  {
     name: "Under the Lights",
     client: "Miles Levin",
     year: "",

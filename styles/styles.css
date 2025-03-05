@@ -56,7 +56,7 @@ html {
 .video {
   width: 100%;
   height: auto;
-  background-color: white;
+  background-color: black;
   border: 3px solid black;
 }
 
@@ -70,6 +70,11 @@ html {
   font-weight: bold;
 }
 
+.subtitle{
+  font-weight: bold;
+  font-size: 18px;
+
+}
 .about {
   max-width: 900px; /* Limits the width of the content */
   width: 80%; /* Ensures it doesn't take up too much space */
