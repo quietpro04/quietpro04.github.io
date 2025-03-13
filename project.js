@@ -6,7 +6,8 @@ projectsData = [
     image_url: "BabyGirl_DIGI_Teaser_Fin7.jpg",
     link: "https://a24films.com/films/babygirl",
     category: "VFX",
-    blurb: "Working at Phosphene, I completed a number of invisible VFX shots for Babygirl. Reflection paint outs, beauty work, set augmentation, grip equipment removal, etc.",
+    blurb:
+      "Working at Phosphene, I completed a number of invisible VFX shots for Babygirl. Reflection paint outs, beauty work, set augmentation, grip equipment removal, etc.",
   },
   {
     name: "Daredevil Born Again",
@@ -15,7 +16,8 @@ projectsData = [
     image_url: "Daredevil.jpg",
     link: "",
     category: "VFX",
-    blurb: "Working at Phosphene, I worked on and shadowed a number of small composting tasks for the project. Screen replacements, paintout, CG comps, and invisible VFX.",
+    blurb:
+      "Working at Phosphene, I worked on and shadowed a number of small composting tasks for the project. Screen replacements, paintout, CG comps, and invisible VFX.",
   },
   {
     name: "Diarra From Detroit",
@@ -24,7 +26,8 @@ projectsData = [
     image_url: "DiarraFromDetroit_Poster.jpg",
     link: "",
     category: "VFX",
-    blurb: "Working at Atlantic Pictures, I completed miscelanous VFX tasks screen comps, enviornment augmentation, and UI elements.",
+    blurb:
+      "Working at Atlantic Pictures, I completed miscelanous VFX tasks screen comps, enviornment augmentation, and UI elements.",
   },
   {
     name: "Reminants of Nova",
@@ -33,7 +36,8 @@ projectsData = [
     image_url: "Reminants.jpg",
     link: "",
     category: "VFX",
-    blurb: "Using NASA footage of the sun's surface as plates, I composited them in a way to match the established cinematic launguage of the film, and to make it appear as though it was shot on the same camera and lenses. Also created a few shots of a nebula though a telescope, all in comp in Nuke.",
+    blurb:
+      "Using NASA footage of the sun's surface as plates, I composited them in a way to match the established cinematic launguage of the film, and to make it appear as though it was shot on the same camera and lenses. Also created a few shots of a nebula though a telescope, all in comp in Nuke.",
   },
   {
     name: "The Mix",
@@ -51,7 +55,8 @@ projectsData = [
     image_url: "",
     link: "",
     category: "VFX",
-    blurb: "Mostly set augmenation (wallpaper seam removal) and other small paintout work.",
+    blurb:
+      "Mostly set augmenation (wallpaper seam removal) and other small paintout work.",
   },
   {
     name: "Anamorphia II",
@@ -60,7 +65,8 @@ projectsData = [
     image_url: "",
     link: "",
     category: "VFX",
-    blurb: "Completed 70+ VFX shots in the span of two weeks, and managed a team of 15 remote VFX artists, establishing a simple pipeline to keep things organized. Created custom UI elements for O.T.I.S.",
+    blurb:
+      "Completed 70+ VFX shots in the span of two weeks, and managed a team of 15 remote VFX artists, establishing a simple pipeline to keep things organized. Created custom UI elements for O.T.I.S.",
   },
   {
     name: "Bankrupt Opener",
@@ -69,7 +75,8 @@ projectsData = [
     image_url: "",
     link: "",
     category: "MoGraph",
-    blurb: "Created in After Effects, this opening title sequence aimed at increasing the production quality of Jake William's Bankrupt series. It used the audio and soundtrack that accompianed the previous piece as a starting point, and has eight distinct segments.",
+    blurb:
+      "Created in After Effects, this opening title sequence aimed at increasing the production quality of Jake William's Bankrupt series. It used the audio and soundtrack that accompianed the previous piece as a starting point, and has eight distinct segments.",
   },
   {
     name: "Under the Lights",
@@ -78,7 +85,8 @@ projectsData = [
     image_url: "",
     link: "",
     category: "VFX",
-    blurb: "Created a CG brain shot using geometry generated in Houdini, rendered in Blender, and comped in Nuke.",
+    blurb:
+      "Created a CG brain shot using geometry generated in Houdini, rendered in Blender, and comped in Nuke.",
   },
   {
     name: "Bridgewater 30th",
@@ -87,7 +95,8 @@ projectsData = [
     image_url: "",
     link: "",
     category: "MoGraph",
-    blurb: "Animated Bridgewater Advisors' logo into a 30th anniversay medalion to be used in a colection of client facing videos.",
+    blurb:
+      "Animated Bridgewater Advisors' logo into a 30th anniversay medalion to be used in a colection of client facing videos.",
   },
   {
     name: "Backlot Animations",
@@ -96,8 +105,9 @@ projectsData = [
     image_url: "",
     link: "",
     category: "MoGraph",
-    blurb: "Determined a motion graphic style for Backlot, a compnay focused on connecting real estate developers with film sets.",
-  }
+    blurb:
+      "Determined a motion graphic style for Backlot, a compnay focused on connecting real estate developers with film sets.",
+  },
 ];
 
 const projectsList = document.getElementById("projectsList");
@@ -141,6 +151,7 @@ function renderProjects(projects) {
     });
 
     projectsList.appendChild(projectElement);
+    highlightCenterProject();
   });
 }
 
@@ -216,3 +227,113 @@ function scrollToSection(id) {
   var section = document.getElementById(id);
   section.scrollIntoView({ behavior: "smooth" });
 }
+
+// function highlightCenterProject() {
+//   if (window.innerWidth > 790) return;
+
+//   const projects = document.querySelectorAll(".project");
+//   const projectsContainer = document.querySelector(".projects-container");
+//   let middleProject = null;
+//   let minDistance = Infinity;
+
+//   projects.forEach((project) => {
+//     const rect = project.getBoundingClientRect();
+//     const centerDistance = Math.abs(
+//       rect.top + rect.height / 2 - window.innerHeight / 2
+//     );
+
+//     if (centerDistance < minDistance) {
+//       minDistance = centerDistance;
+//       middleProject = project;
+//     }
+//   });
+
+//   // Reset all projects' font-weight
+//   projects.forEach((project) => (project.style.fontWeight = "normal"));
+
+//   // Apply bold font and background image for the centered project
+//   if (middleProject) {
+//     middleProject.style.fontWeight = "bold";
+
+//     const projectIndex = Array.from(projects).indexOf(middleProject);
+//     const projectsData = window.projectsData || []; // Store project data globally
+//     const selectedProject = projectsData[projectIndex];
+
+//     if (selectedProject && selectedProject.image_url) {
+//       // const imagePath = `images/posters/${selectedProject.image_url}`;
+//       const imagePath = `images/posters/BabyGirl_DIGI_Teaser_Fin7.jpg`;
+//       projectsContainer.style.backgroundImage = `url(${imagePath})`;
+//       projectsContainer.style.backgroundSize = "cover";
+//       projectsContainer.style.backgroundPosition = "center";
+//       projectsContainer.style.backgroundRepeat = "no-repeat";
+//     }
+//   } else {
+//     // Reset background if no project is centered
+//     projectsContainer.style.backgroundImage = "none";
+//   }
+// }
+
+function highlightCenterProject() {
+  // Check if the viewport width is less than or equal to a mobile screen width (e.g., 768px)
+  if (window.innerWidth > 790) return;
+
+  const projects = document.querySelectorAll(".project");
+  const projectsContainer = document.querySelector(".projects-container");
+  let middleProject = null;
+  let minDistance = Infinity;
+
+  projects.forEach((project) => {
+    const rect = project.getBoundingClientRect();
+    const centerDistance = Math.abs(
+      rect.top + rect.height / 2 - window.innerHeight / 2
+    );
+
+    if (centerDistance < minDistance) {
+      minDistance = centerDistance;
+      middleProject = project;
+    }
+  });
+
+  // Reset all projects' font-weight
+  projects.forEach((project) => {
+    project.style.fontWeight = "normal";
+    project.style.color = "";
+  });
+
+  // Apply bold font and display the centered project's image
+  if (middleProject) {
+    middleProject.style.fontWeight = "bold";
+
+    const projectIndex = Array.from(projects).indexOf(middleProject);
+    const projectsData = window.projectsData || []; // Store project data globally
+    const selectedProject = projectsData[projectIndex];
+
+    // Check if there is an image to display
+    if (selectedProject && selectedProject.image_url) {
+      middleProject.style.color = "white";
+      // Remove existing image if present
+      const existingImage = projectsContainer.querySelector("img");
+      if (existingImage) {
+        existingImage.remove();
+      }
+
+      // Apply the background image to the projects container
+      projectsContainer.style.backgroundImage = `url(images/posters/${selectedProject.image_url})`;
+      projectsContainer.style.backgroundSize = "contain"; // Ensure the image fits within the container without distortion
+      projectsContainer.style.backgroundPosition = "center";
+      projectsContainer.style.backgroundRepeat = "no-repeat";
+    } else {
+      // Reset background if no project is centered
+      projectsContainer.style.backgroundImage = "none";
+    }
+  } else {
+    // Reset background if no project is centered
+    projectsContainer.style.backgroundImage = "none";
+  }
+}
+
+// Run the function on scroll
+window.addEventListener("scroll", highlightCenterProject);
+
+// Run once on page load
+document.addEventListener("DOMContentLoaded", highlightCenterProject);
