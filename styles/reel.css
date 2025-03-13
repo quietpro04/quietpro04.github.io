@@ -5,7 +5,7 @@ body {
   justify-content: center; /* Horizontally center */
   align-items: center;
 
-  background-color: black;
+  background-color: white;
   background-image: radial-gradient(circle, #f2f2f2 10%, transparent 0%);
   background-size: 20px 20px;
 }
