@@ -116,6 +116,12 @@ html {
   margin-top: 60px;
 }
 
+@media (max-width: 790px) {
+  #email {
+    font-size: 2em;
+  }
+}
+
 /* For reel */
 
 #reels {
