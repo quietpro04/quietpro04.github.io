@@ -6,7 +6,7 @@ projectsData = [
     image_url: "BabyGirl_DIGI_Teaser_Fin7.jpg",
     link: "https://a24films.com/films/babygirl",
     category: "VFX",
-    blurb: "Working at Phosphene, I completed a number of invisible VFX shots for Babygirl. Reflection paint outs, beauty work, set augmentation, grip equipment removal, etc.",
+    blurb: "Working at Phosphene, I completed a number of invisible VFX shots for Babygirl: reflection paint-outs, beauty work, set augmentation, grip equipment removal, etc.",
   },
   {
     name: "Daredevil Born Again",
@@ -15,7 +15,7 @@ projectsData = [
     image_url: "Daredevil.jpg",
     link: "",
     category: "VFX",
-    blurb: "Working at Phosphene, I worked on and shadowed a number of small composting tasks for the project. Screen replacements, paintout, CG comps, and invisible VFX.",
+    blurb: "Working at Phosphene, I worked on and shadowed a number of small compositing tasks for the project: screen replacements, paint-outs, CG comps, and invisible VFX.",
   },
   {
     name: "Diarra From Detroit",
@@ -24,16 +24,16 @@ projectsData = [
     image_url: "DiarraFromDetroit_Poster.jpg",
     link: "",
     category: "VFX",
-    blurb: "Working at Atlantic Pictures, I completed miscelanous VFX tasks screen comps, enviornment augmentation, and UI elements.",
+    blurb: "Working at Atlantic Pictures, I completed miscellaneous VFX tasks: screen comps, environment augmentation, and UI elements.",
   },
   {
-    name: "Reminants of Nova",
+    name: "Remnants of Nova",
     client: "-",
     year: "10/12/2024",
     image_url: "Reminants.jpg",
     link: "",
     category: "VFX",
-    blurb: "Using NASA footage of the sun's surface as plates, I composited them in a way to match the established cinematic launguage of the film, and to make it appear as though it was shot on the same camera and lenses. Also created a few shots of a nebula though a telescope, all in comp in Nuke.",
+    blurb: "Using NASA footage of the sun's surface as plates, I composited them to match the established cinematic language of the film, making it appear as though it was shot on the same camera and lenses. Also created a few shots of a nebula through a telescope, all composited in Nuke.",
   },
   {
     name: "The Mix",
@@ -42,7 +42,7 @@ projectsData = [
     image_url: "TheMix.jpg",
     link: "",
     category: "VFX",
-    blurb: "Tracked and comped a logo onto a jar for a few shots.",
+    blurb: "Tracked and composited a logo onto a jar for a few shots.",
   },
   {
     name: "A Seat at the Table",
@@ -51,7 +51,7 @@ projectsData = [
     image_url: "",
     link: "",
     category: "VFX",
-    blurb: "Mostly set augmenation (wallpaper seam removal) and other small paintout work.",
+    blurb: "Mostly set augmentation (wallpaper seam removal) and other small paint-out work.",
   },
   {
     name: "Anamorphia II",
@@ -69,7 +69,7 @@ projectsData = [
     image_url: "",
     link: "",
     category: "MoGraph",
-    blurb: "Created in After Effects, this opening title sequence aimed at increasing the production quality of Jake William's Bankrupt series. It used the audio and soundtrack that accompianed the previous piece as a starting point, and has eight distinct segments.",
+    blurb: "Created in After Effects, this opening title sequence aimed at increasing the production quality of Jake Williams' Bankrupt series. It used the audio and soundtrack that accompanied the previous piece as a starting point and features eight distinct segments.",
   },
   {
     name: "Under the Lights",
@@ -78,7 +78,7 @@ projectsData = [
     image_url: "",
     link: "",
     category: "VFX",
-    blurb: "Created a CG brain shot using geometry generated in Houdini, rendered in Blender, and comped in Nuke.",
+    blurb: "Created a CG brain shot using geometry generated in Houdini, rendered in Blender, and composited in Nuke.",
   },
   {
     name: "Bridgewater 30th",
@@ -87,7 +87,7 @@ projectsData = [
     image_url: "",
     link: "",
     category: "MoGraph",
-    blurb: "Animated Bridgewater Advisors' logo into a 30th anniversay medalion to be used in a colection of client facing videos.",
+    blurb: "Animated Bridgewater Advisors' logo into a 30th anniversary medallion to be used in a collection of client-facing videos.",
   },
   {
     name: "Backlot Animations",
@@ -96,9 +96,19 @@ projectsData = [
     image_url: "",
     link: "",
     category: "MoGraph",
-    blurb: "Determined a motion graphic style for Backlot, a compnay focused on connecting real estate developers with film sets.",
+    blurb: "Developed a motion graphic style for Backlot, a company focused on connecting real estate developers with film sets.",
+  },
+  {
+    name: "Public Opinion",
+    client: "Public Opinion",
+    year: "4/2/2025",
+    image_url: "",
+    link: "https://www.youtube.com/@publicopinionnyc",
+    category: "MoGraph",
+    blurb: "Developed and enhanced a visual style for the Public Opinion YouTube channel and longform content. Work includes stylized 3D visualizers, 2D explanatory graphics, and general visual interest and flair—all with an analog look.",
   }
 ];
+
 
 const projectsList = document.getElementById("projectsList");
 const hoverImage = document.getElementById("hoverImage");
