@@ -23,6 +23,8 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
 .navbar {
   position: fixed; /* Fixed position to stay on the right */
   right: 3%; /* Align to the right side */
