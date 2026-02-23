@@ -6,7 +6,11 @@ body {
   align-items: center;
 
   background-color: white;
-  background-image: radial-gradient(circle, #f2f2f2 10%, transparent 0%);
+  background-image: radial-gradient(
+    circle,
+    rgba(209, 209, 209, 0.5) 10%,
+    transparent 0%
+  );
   background-size: 20px 20px;
 }
 
@@ -53,4 +57,52 @@ video {
   width: 80vw;
   height: auto;
   border: 2px solid black;
+}
+
+.footer {
+  color: black;
+  text-align: center;
+  padding: 20px;
+  font-size: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  color: inherit;
+
+}
+
+
+
+
+.navbar {
+  position: fixed; /* Fixed position to stay on the right */
+  right: 3%; /* Align to the right side */
+  top: 5%; /* Vertically center the navbar */
+  transform: translateY(-50%); /* Adjust for true vertical center */
+  display: flex;
+  flex-direction: column; /* Stack the items vertically */
+  align-items: flex-start; /* Align links to the left of the navbar */
+  gap: 20px; /* Space between the navbar items */
+  padding: 20px; /* Padding inside navbar */
+}
+
+.navbar a {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Link color */
+  font-size: 18px; /* Font size */
+}
+
+.navbar a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+.tools-link::after {
+  content: "←";
+  opacity: 0;
+  /* transition: opacity 0.2s ease; */
+}
+
+.tools-link:hover::after {
+  opacity: 1;
 }

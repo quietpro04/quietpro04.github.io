@@ -3,6 +3,7 @@
   margin: 20px 140px;
 }
 
+
 body {
   margin: 0;
   font-family: Helvetica;
@@ -261,7 +262,7 @@ html {
   margin: 0;
   margin-top: 5px;
   margin-bottom: 10px;
-  gap: 20px; /* Space between links */
+  gap: 20px; 
   justify-content: center;
 }
 
@@ -442,4 +443,13 @@ a:hover {
   .footer {
     font-size: 10px;
   }
+}
+
+.tools-link::after {
+  content: " →";
+  opacity: 0;
+}
+
+.tools-link:hover::after {
+  opacity: 1;
 }
