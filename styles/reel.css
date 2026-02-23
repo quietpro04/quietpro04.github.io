@@ -88,9 +88,9 @@ video {
 }
 
 .navbar a {
-  text-decoration: none; /* Remove underline */
-  color: black; /* Link color */
-  font-size: 18px; /* Font size */
+  text-decoration: none; 
+  color: black;
+  font-size: 18px;
 }
 
 .navbar a:hover {
@@ -100,7 +100,6 @@ video {
 .tools-link::after {
   content: "←";
   opacity: 0;
-  /* transition: opacity 0.2s ease; */
 }
 
 .tools-link:hover::after {
